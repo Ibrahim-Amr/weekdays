@@ -1,0 +1,95 @@
+using System;
+
+namespace Testing_ideas
+{
+    class weekdays
+    {
+        public void days()
+        {
+            Console.WriteLine("if your week starts with \"Saturday\" enter number \"1\" if it starts with \"Sunday\" enter \"2\"");
+            int choice;
+            choice = int.Parse(Console.ReadLine());
+            if (choice == 1)
+            {
+                Console.WriteLine("please enter the day number");
+                int days;
+                days = int.Parse(Console.ReadLine());
+                switch (days)
+                {
+                    case 1:
+                        Console.WriteLine("1st day is: " + "Saturday");
+                        break;
+                    case 2:
+                        Console.WriteLine("2nd day is: " + "Sunday");
+                        break;
+                    case 3:
+                        Console.WriteLine("3rd day is: " + "Monday");
+                        break;
+                    case 4:
+                        Console.WriteLine("4th day is: " + "Tuesday");
+                        break;
+                    case 5:
+                        Console.WriteLine("5th day is: " + "Wednesday");
+                        break;
+                    case 6:
+                        Console.WriteLine("6th day is: " + "Thursday");
+                        break;
+                    case 7:
+                        Console.WriteLine("7th day is: " + "Friday");
+                        break;
+                    default:
+                        Console.WriteLine("ERROR");
+                        break;
+
+                }
+            }
+            else if (choice == 2)
+            {
+                Console.WriteLine("please enter the day number");
+                int days;
+                days = int.Parse(Console.ReadLine());
+                switch (days)
+                {
+                    case 1:
+                        Console.WriteLine("1st day is: " + "Sunday");
+                        break;
+                    case 2:
+                        Console.WriteLine("2nd day is: " + "Monday");
+                        break;
+                    case 3:
+                        Console.WriteLine("3rd day is: " + "Tuesday");
+                        break;
+                    case 4:
+                        Console.WriteLine("4th day is: " + "Wednesday");
+                        break;
+                    case 5:
+                        Console.WriteLine("5th day is: " + "Thursday");
+                        break;
+                    case 6:
+                        Console.WriteLine("6th day is: " + "Friday");
+                        break;
+                    case 7:
+                        Console.WriteLine("7th day is: " + "Saturday");
+                        break;
+                    default:
+                        Console.WriteLine("ERROR");
+                        break;
+                }
+
+
+            }
+            else
+            {
+                Console.WriteLine("ERROR");
+            }
+        }
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                weekdays obj = new weekdays();
+                obj.days();
+            }
+        }
+    }
+}
